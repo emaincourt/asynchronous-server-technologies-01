@@ -1,0 +1,46 @@
+## TP - 01
+
+### Preparation
+
+Run `yarn` at the root of your project to install the needed dependencies. 
+
+### Getting started
+
+Run `yarn build && yarn start` for starting the server. It will be running on `0.0.0.0@3000`.
+
+### API
+
+> GET /users/:userId
+
+Payload :
+```json
+{}
+```
+
+Response :
+```json
+{
+  "id": string,
+  "email": string,
+  "password": string
+}
+```
+
+> POST /users
+
+Payload :
+```json
+{
+  "email": string,
+  "password": string
+}
+```
+
+Response :
+```json
+{
+  "id": string,
+  "email": string,
+  "password": string
+}
+```

@@ -9,7 +9,8 @@
     "build": "babel lib -d dist",
     "start": "node dist/index.js",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

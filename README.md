@@ -14,35 +14,35 @@ Run `yarn test` to run the tests, and `yarn test:coverage` to do so with code co
 
 > GET /users/:userId
 
-Payload :
-```json
+```javascript
+// Payload
 {}
 ```
 
-Response :
-```json
+```javascript
+// Response
 {
-  "id": string,
-  "email": string,
-  "password": string
+  "id": String,
+  "email": String,
+  "password": String
 }
 ```
 
 > POST /users
 
-Payload :
-```json
+```javascript
+// Payload
 {
-  "email": string,
-  "password": string
+  "email": String,
+  "password": String
 }
 ```
 
-Response :
-```json
+```javascript
+// Response
 {
-  "id": string,
-  "email": string,
-  "password": string
+  "id": String,
+  "email": String,
+  "password": String
 }
 ```

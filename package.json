@@ -1,0 +1,37 @@
+{
+  "name": "asynchronous-server-technologies",
+  "version": "1.0.0",
+  "description": "Basic NodeJS server",
+  "main": "lib",
+  "author": "Elliot Maincourt <e.maincourt@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel lib -d dist",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "boom": "^6.0.0",
+    "faker": "^4.1.0",
+    "hapi": "^16.6.2",
+    "joi": "^11.3.0",
+    "lodash": "^4.17.4",
+    "uuid": "^3.1.0"
+  }
+}

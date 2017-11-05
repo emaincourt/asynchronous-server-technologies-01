@@ -1,8 +1,8 @@
-import Boom from 'boom';
-import Joi from 'joi';
-import User from '../../models/user';
+Boom = require 'boom';
+Joi = require 'joi';
+User = require '../../models/user';
 
-export default
+module.exports =
   method: 'GET'
   path: '/users/{userId}'
   config:
@@ -10,7 +10,7 @@ export default
       params:
         userId: Joi.string().required()
     handler: ({ params }, reply) ->
-      user = await User.findById(params.userId)
+      user = await User.findById params.userId
       if user
         reply(user).code(200)
       else

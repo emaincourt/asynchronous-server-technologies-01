@@ -1,7 +1,7 @@
-import Boom from 'boom';
-import Joi from 'joi';
-import { pick } from 'lodash';
-import User from '../../models/user';
+Boom = require 'boom';
+Joi = require 'joi';
+{ pick } = require 'lodash';
+User = require '../../models/user';
 
 module.exports =
   method: 'POST'
@@ -12,9 +12,7 @@ module.exports =
         email: Joi.string().email().required()
         password: Joi.string().required()
     handler: ({ payload }, reply) ->
-      user = new User(
-        pick(payload, 'email', 'password')
-      );
+      user = new User pick payload,'email','password'
       await user.save();
       reply(
         user.details()

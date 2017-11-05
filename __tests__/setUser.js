@@ -1,6 +1,6 @@
 import should from 'should';
 import Joi from 'joi';
-import v1 from '../lib/services/service-users/create-user.js';
+import v1 from '../dist/services/service-users/create-user.js';
 
 describe('#validation', () => {
   it('validates a valid email and a password', (done) => {

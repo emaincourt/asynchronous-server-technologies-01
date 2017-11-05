@@ -1,6 +1,6 @@
-import { Server } from 'hapi';
-import createUser from './services/service-users/create-user';
-import getUser from './services/service-users/get-user';
+{ Server } = require 'hapi';
+createUser = require './services/service-users/create-user';
+getUser = require './services/service-users/get-user';
 
 server = new Server();
 
@@ -18,5 +18,5 @@ server.route([
 server.start((err) ->
   if err
     throw err;
-  console.log("Server running at: #{server.info.uri}");
+  console.log "Server running at: #{server.info.uri}"
 );

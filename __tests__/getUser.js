@@ -1,6 +1,6 @@
 import should from 'should';
 import Joi from 'joi';
-import v1 from '../lib/services/service-users/get-user.js';
+import v1 from '../dist/services/service-users/get-user.js';
 
 describe('#validation', () => {
   it('validates an user id as a query parameter', (done) => {
